@@ -1,0 +1,208 @@
+/*============================
+       Color Palette
+=============================*/
+/*
+* #BEBBBB     #BEBBBB
+* #444054     #444054
+* #2F243A     #0D1B2A
+* #FAC9B8     #07020D
+* #DB8A74     #5DB7DE
+*/
+
+/*============================
+        Global Styles
+=============================*/
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Tillana', cursive;
+  font-family: 'Flamenco', cursive;
+  font-weight: normal;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+	font-size: 40px;
+	margin-top: 0;
+}
+h3 {
+	margin: 0;
+}
+a {
+/*  color: #D9B310; */
+	color: #99D19C;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 60px 50px;
+	overflow: auto;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.btn {
+	text-decoration: none;
+	background: #8D99AE;
+	color: #EDF7EC;
+	display: inline-block;
+	padding: 10px;
+}
+.btn:hover {
+//	background: #EDF7EC;
+	background: #99D19C;
+	color: #8D99AE;
+//	color: #99D19C;
+	color: #0B3C5D;
+}
+
+/*============================
+       Header & Footer
+=============================*/
+header, footer {
+  background: #0B3C5D;
+  color: #8D99AE;
+}
+header {
+	/*text-align: center;*/
+	padding-top: 50px;
+	position: relative;
+}
+header h1, header h2 {
+/*  color: #E9F6E8; */
+	color: #EDF7EC;
+  margin: 0;
+}
+.profile-pic {
+	border-radius: 50%;
+/*	width: 300px;
+	float: left;
+	margin-right: 30px; */
+}
+.download {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+footer {
+	text-align: center;
+	color: #EDF7EC;
+}
+.contact-info a {
+	display: inline-block;
+	padding: 10px;
+}
+
+
+/*============================
+          Navigation
+=============================*/
+
+nav {
+	text-align: center;
+	background: #EDF7EC;
+	background: #0B3C5D;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+}
+nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+
+/*============================
+        Work Experience
+=============================*/
+.work {
+  background: #EDF7EC;
+}
+h3 ~ p {
+	margin: 0;
+}
+.job-description {
+	margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+	margin-top: 0;
+}
+.job-description li {
+	margin-top: 15px;
+}
+
+/*============================
+          Education
+=============================*/
+.education {
+//  background: #8D99AE;
+	background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.4)),
+	url("uta.jpg") no-repeat fixed;
+	background-size: cover;
+	color: #EDF7EC;
+}
+p + h3 {
+	margin-top: 30px;
+}
+.education a {
+	color: #0B3C5D;
+	font-weight: bold;
+}
+.show {
+	cursor: pointer;
+}
+
+/*============================
+        Media Queries
+=============================*/
+
+@media (min-width: 900px) {
+	.col-narrow {
+		width: 30%;
+		float: left;
+	}
+	.col-wide {
+		width: 70%;
+		float: left;
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 899px) {
+	header {
+		text-align: center;
+	}
+	.profile-pic {
+		width: 200px;
+	}
+	.job-description p:first-of-type {
+		margin-top: 20px;
+	}
+}
+
+/*============================
+         JavaScript
+=============================*/
+
+.js-hidden {
+	display: none;
+}
